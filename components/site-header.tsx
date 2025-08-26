@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { DropdownMenu, DropdownMenuItem, DropdownMenuContent, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
 import { LogOut, Settings, User, Bell, ChevronDown } from "lucide-react"
+import { SidebarTrigger } from "./ui/sidebar"
 
 export function SiteHeader() {
   return (
@@ -10,6 +11,7 @@ export function SiteHeader() {
       <div className="flex flex-col gap-4 lg:gap-6">
         <div>
           <h1 className="text-lg sm:text-xl font-medium flex items-center gap-2">
+          <SidebarTrigger className="-ml-1" />   
             Hello, Piyush Patyal 
             <span className="text-yellow-400">👋</span>
           </h1>
